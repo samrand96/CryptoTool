@@ -44,8 +44,6 @@ public class About extends javax.swing.JPanel {
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jButton1 = new javax.swing.JButton();
-        jButton2 = new javax.swing.JButton();
-        jButton3 = new javax.swing.JButton();
         jButton4 = new javax.swing.JButton();
 
         setMaximumSize(new java.awt.Dimension(400, 300));
@@ -79,20 +77,6 @@ public class About extends javax.swing.JPanel {
             }
         });
 
-        jButton2.setText("Razan Hidayet");
-        jButton2.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contactRazan(evt);
-            }
-        });
-
-        jButton3.setText("Iman Abdulahad");
-        jButton3.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                contactIman(evt);
-            }
-        });
-
         jButton4.setText("Back");
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -118,8 +102,6 @@ public class About extends javax.swing.JPanel {
                         .addComponent(jLabel6)
                         .addGap(0, 0, Short.MAX_VALUE))
                     .addComponent(jButton1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(jButton2, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE)
-                    .addComponent(jButton3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, 123, Short.MAX_VALUE))
                 .addContainerGap())
         );
         jPanel1Layout.setVerticalGroup(
@@ -143,9 +125,6 @@ public class About extends javax.swing.JPanel {
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                         .addComponent(jButton1)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(jButton3)
                         .addGap(0, 39, Short.MAX_VALUE))))
         );
 
@@ -182,24 +161,6 @@ public class About extends javax.swing.JPanel {
         }
     }//GEN-LAST:event_contactSam
 
-    private void contactRazan(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactRazan
-        // TODO add your handling code here:
-        try{
-            desktop.mail(new java.net.URI("mailto:razanhidayet@gmail.com"));
-        }catch(URISyntaxException | IOException ex){
-            ex.printStackTrace();
-        }
-    }//GEN-LAST:event_contactRazan
-
-    private void contactIman(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_contactIman
-        // TODO add your handling code here:
-        try{
-            desktop.mail(new java.net.URI("mailto:iman.a.kamal@gmail.com"));
-        }catch(URISyntaxException | IOException ex){
-            ex.printStackTrace();
-        }
-    }//GEN-LAST:event_contactIman
-
     private void back(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_back
         // TODO add your handling code here:
         ui.setContentPane(new Home(ui));
@@ -210,8 +171,6 @@ public class About extends javax.swing.JPanel {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton jButton1;
-    private javax.swing.JButton jButton2;
-    private javax.swing.JButton jButton3;
     private javax.swing.JButton jButton4;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
